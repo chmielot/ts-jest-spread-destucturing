@@ -1,0 +1,46 @@
+{
+  "name": "ts-jest-spread",
+  "version": "0.0.1",
+  "description": "ts-jest spread test",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "bin",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "test:nocoverage": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.9",
+    "@types/node": "^8.5.2",
+    "babel-jest": "^22.0.4",
+    "jest": "^22.0.4",
+    "source-map-support": "^0.x",
+    "ts-jest": "^22.0.0",
+    "ts-node": "^4.x",
+    "tslint": "^5.x",
+    "tslint-config-airbnb": "^5.x",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.x"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(j|t)sx?$": "ts-jest"
+    },
+    "mapCoverage": true,
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
